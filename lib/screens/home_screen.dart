@@ -34,6 +34,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final Size screenSize = MediaQuery.of(context).size;
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      //body will went behind the appbar by it
       floatingActionButton: FloatingActionButton(
         onPressed: () => print('cast'),
         backgroundColor: Colors.grey[850],
